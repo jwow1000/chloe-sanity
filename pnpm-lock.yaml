@@ -24,6 +24,9 @@ importers:
         specifier: ^6.1.8
         version: 6.1.15(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
+      '@sanity/codegen':
+        specifier: ^3.77.2
+        version: 3.77.2
       '@sanity/eslint-config-studio':
         specifier: ^5.0.1
         version: 5.0.1(eslint@9.21.0)(typescript@5.7.3)
@@ -1646,6 +1649,10 @@ packages:
     resolution: {integrity: sha512-qIXbhtzfpWdc6oDAuKQkSOUCZN24XVrxD0npkicdtgcd0Z9UV8lhE9jEdkMBSMEbPfi195CRG1f8E7GNDpF5+A==}
     engines: {node: '>=18'}
 
+  '@sanity/codegen@3.77.2':
+    resolution: {integrity: sha512-IXNQT+wPHqSayEuxOkghSHjzgWikbEwPdYRxpI8Kc4qc/FqQ9VRk4xmI7AlD3YafGF5OSWopBoft6UXDgQO+Cg==}
+    engines: {node: '>=18'}
+
   '@sanity/color@3.0.6':
     resolution: {integrity: sha512-2TjYEvOftD0v7ukx3Csdh9QIu44P2z7NDJtlC3qITJRYV36J7R6Vfd3trVhFnN77/7CZrGjqngrtohv8VqO5nw==}
     engines: {node: '>=18.0.0'}
@@ -3119,6 +3126,10 @@ packages:
 
   groq@3.77.1:
     resolution: {integrity: sha512-4JHVAqrE1A9OWVRLOdCTVQAgArMm7SV1JIUAyrPwiQhvLXg+qodI3cDw522/1/kfAFP6cGAO2f9oVoAW8XI76Q==}
+    engines: {node: '>=18'}
+
+  groq@3.77.2:
+    resolution: {integrity: sha512-cuyOru3Bu2zdp+5MXGa9NBohhD028ykEaURByvY45VA0+rF3aTLMkzGpcyogAzoLQJGD8m2yB+uLZA58XhSHWw==}
     engines: {node: '>=18'}
 
   gunzip-maybe@1.4.2:
@@ -6911,6 +6922,26 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@sanity/codegen@3.77.2':
+    dependencies:
+      '@babel/core': 7.26.9
+      '@babel/generator': 7.26.9
+      '@babel/preset-env': 7.26.9(@babel/core@7.26.9)
+      '@babel/preset-react': 7.26.3(@babel/core@7.26.9)
+      '@babel/preset-typescript': 7.26.0(@babel/core@7.26.9)
+      '@babel/register': 7.25.9(@babel/core@7.26.9)
+      '@babel/traverse': 7.26.9
+      '@babel/types': 7.26.9
+      debug: 4.4.0
+      globby: 11.1.0
+      groq: 3.77.2
+      groq-js: 1.15.0
+      json5: 2.2.3
+      tsconfig-paths: 4.2.0
+      zod: 3.24.2
+    transitivePeerDependencies:
+      - supports-color
+
   '@sanity/color@3.0.6': {}
 
   '@sanity/comlink@3.0.1':
@@ -8890,6 +8921,8 @@ snapshots:
       - supports-color
 
   groq@3.77.1: {}
+
+  groq@3.77.2: {}
 
   gunzip-maybe@1.4.2:
     dependencies:

@@ -16,5 +16,10 @@ export const homepageType = defineType({
       title: 'Cover Text',
       type: 'string',
     }),
+    defineField({
+      name: 'altText',
+      title: 'alt Text',
+      type: 'string',
+    }),
   ],
 })
