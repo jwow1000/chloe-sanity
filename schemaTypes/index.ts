@@ -1,9 +1,9 @@
 import { calendarType } from "./calendarType";
 import { homepageType } from "./homepageType";
-import { postType } from "./postType";
+import { workType } from "./workType";
 
 export const schemaTypes = [ 
-  postType,
+  workType,
   calendarType,
   homepageType
 ]

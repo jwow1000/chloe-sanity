@@ -1,8 +1,8 @@
 import {defineField, defineType} from 'sanity'
 
-export const postType = defineType({
+export const workType = defineType({
   name: 'post',
-  title: 'Post',
+  title: 'Works',
   type: 'document',
   fields: [
     defineField({
@@ -89,6 +89,12 @@ export const postType = defineType({
       name: 'mainImage',
       title: 'Main Image',
       type: 'image',
+    }),
+    defineField({
+      name: 'videoLink',
+      title: 'Video Link',
+      description: "Url to Youtube, Vimeo, etc...",
+      type: 'url'
     }),
     defineField({
       name: 'video',
